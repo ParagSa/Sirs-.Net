@@ -1,0 +1,21 @@
+ViewBag - from controller to View
+values in the same request, lost when the request is over, also lost on redirect
+Viewbag is a dynamic object (ExpandoObject)
+ViewBag is a wrapper for ViewData
+usage : 
+ViewBag.prop = value
+int x = ViewBag.prop
+----
+ViewData - from controller to View
+values in the same request, lost when the request is over, also lost on redirect
+ViewData is a collection
+usage : 
+ViewData["key"] = 10
+int x = (int)ViewData["key"]
+----
+TempData - from controller to View
+values in the same request, lost when the request is over, but available for a redirect
+TempData is a collection
+usage : 
+TempData ["key"] = 10
+int x = (int)TempData ["key"]
